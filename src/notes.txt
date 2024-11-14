@@ -1,0 +1,67 @@
+Notes from index.js moved here for cleanliness
+
+/*
+OUT OF DATE
+ReactDom.render(<BookList />, document.getElementById("root"));
+*/
+
+// // doesn't look as good (what happens under the hood)
+// const Greeting = () =>{
+//   return React.createElement(
+//     'div',
+//     {},
+//     React.createElement('h1', {}, 'hello world')
+//   );
+// }
+
+//need to capitalize first letter so react knows it is a component
+// function Greeting() {
+//   //need to return html (officially called JSX) (always)
+//   return (
+//     <div>
+//       <h3>Hello People</h3>
+//       <ul>
+//         <li>
+//           <a
+//             href="https://www.youtube.com/watch?v=5EBSqTf-vXI"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             Brandon Perna Vid
+//           </a>
+//         </li>
+//         <img src="" alt="" />
+//         <input type="text" />
+//       </ul>
+//     </div>
+//   );
+// }
+
+/* 
+JSX Rules
+1. Return a single element
+  get creative in the single element
+  cannot have multiple <div> elements (must all be wrapped in one div)
+  Follow html semantics (div/section/article) for good practice
+2. use camelCase for an html attribute
+3. className intead of class (class is a keyword) in div
+4. close every element
+*/
+
+//***************************************************************** */
+// //NESTED COMPONENTS
+// function BookList() {
+//   return (
+//     <div>
+//       <Person />
+//       <Message />
+//     </div>
+//   );
+// }
+
+// //splitting up application into separate chunks, allows reuse
+// const Person = () => <h2>john doe</h2>; //implicit return
+// const Message = () => {
+//   return <p>this is my message</p>; //explicit return
+// };
+//***************************************************************** */
